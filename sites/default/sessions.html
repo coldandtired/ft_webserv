@@ -1,0 +1,36 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Set a Session</title>
+</head>
+<body class="intro" style="font-family: Arial, sans-serif;">
+    <header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a class="nav__link" href="index.html">Home</a>
+				<nav class="nav">
+					<a class="nav__link" href="cgi_tests.html">CGI tests</a>
+					<a class="nav__link" href="cookies.html">Cookies Test</a>
+					<a class="nav__link" href="sessions.html">Sessions Test</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+    <div style="max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px;">
+        <h1 style="text-align:center; color: #28a745;">Set a Session Variable</h1>
+
+        <form method="POST" action="./cgi-bin/sessions.php">
+            <label for="session_name" style="font-weight: bold;">Session Name:</label>
+            <input type="text" id="session_name" name="session_name" placeholder="e.g., user_id" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+
+            <label for="session_value" style="font-weight: bold;">Session Value:</label>
+            <input type="text" id="session_value" name="session_value" placeholder="e.g., 12345" style="width: 100%; padding: 8px; margin-bottom: 10px;">
+
+            <button type="submit" name="submit_set_session" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 4px;">Set Session</button>
+        </form>
+    </div>
+</body>
+</html>
